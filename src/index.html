@@ -6,28 +6,78 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>LibrOcasión</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+  <body class="container">
+    <include src="./views/header.html"></include>
+    <div class="container__item">
+      <article class="container__article">
+        <h1 class="container__title">Libro del mes</h1>
+        <p class="container__title">01 Noviembre 2026</p>
+        <h2 class="container__title">Universo Reina Roja</h2>
+        <h3 class="container__title--obscure">Todo arde</h3>
+        <figure class="images">
+          <img
+            class="images"
+            src="./assets/images/todo_arde_800.jpg"
+            alt="Portada del libro 'Todo Arde' de Juán Gómez-Jurado"
+          />
+          <figcaption class="images__caption">Foto: Rodrigo Mañas Barceló</figcaption>
+        </figure>
+        <p>
+          Nunca una decisión tomada sobre un bote de champú había llevado a Aura Reyes tan lejos, a una lucha contra su
+          antiguo jefe, quien le había dado y quitado todo. Este mal día llevará a quién había respetado
+          escrupulosamente el orden establecido, por injusto que fuese, a revelarse contra todo, cueste lo que cueste.
+        </p>
+        <p>
+          En esta lucha conocerá a Mari Paz Celeiro, aka <i>Emepé</i>, una antigua legionaria con voluntad de hierro y
+          presente desengañado, que encontrará una balsa a la que agarrarse en su vida a la deriva, y Sere, una
+          talentosa <i>hacker</i> que es capaz de borrar sus huellas digitales con delicadeza y de luchar contra la
+          injustica, aunque la saque de su vida de reclusión.
+        </p>
+        <p>
+          Las tres se embarcarán en una aventura de ingenio, venganza, superación, compromiso y amor, pero llena de
+          ingenuidad, contra el poder, la corrupción y la injusticia. Los métodos no son los más importantes, al fin y
+          al cabo, todo está justificado contra la injustica y a favor del amor. Ni las armas ni el campo de batalla, lo
+          eligieron ellas.
+        </p>
+        <section id="universoReinaRoja"></section>
+        <p>
+          En esta nueva entrega del <i>Universo Reina Roja</i>, los personajes nos sorprenderán con creces, unos por la
+          bondad y el compromiso que tienen, aunque no tengan nada que ganar, otros por la ambición y avaricia con la
+          que dejan que su vida sea guiada, aunque no ganen lo que quieren.
+        </p>
+        <p>
+          El ingenio de Juán Gómez-Jurado nos sumerge de nuevo en este universon donde enigmas del pasado son resueltos,
+          a la vez que nuevas preguntas surgen, unas con respuestas, otras no tanto.
+        </p>
+        <p>
+          El estilo característico de Juán Gómez-Jurado, con sus tramas entrelazadas, giros inesperados, respuestas
+          ingeniosas y gotas de humor, te mantendrá en la trama una vez hayas comenzado. Sólo podrás preguntarte, ¿está
+          pasando de verdad? ¿cómo es posible? y otras preguntas cuyas respuestas encontrarás, o no.
+        </p>
+        <p>
+          Atrévete a adentrarte en el <i>Universo Reina Roja</i>, si es tu primera vez, o déjate llevar por él, ya sabes
+          lo que te puede esperar. Definitivamente, ¡no te defraudará!
+        </p>
+      </article>
+    </div>
+    <div class="newsletter">
+      <div class="newsletter__info">
+        <h2 class="newsletter__title">Suscríbete a nuestro boletín</h2>
+        <p class="newsletter__text">Recibe las últimas novedades.</p>
+      </div>
+      <form class="form" id="newsletterForm">
+        <div class="form__group">
+          <i class="fa-solid fa-user form__icon"></i>
+          <input type="text" class="form__input" placeholder="Tu nombre" required />
+        </div>
+        <div class="form__group">
+          <i class="fa-solid fa-envelope form__icon"></i>
+          <input type="email" class="form__input" placeholder="Tu correo electrónico" required />
+        </div>
+        <button type="submit" class="form__btn">Suscribirme</button>
+      </form>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>

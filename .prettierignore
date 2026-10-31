@@ -1,0 +1,11 @@
+node_modules
+src/images/*.*
+.editorconfig
+.gitignore
+.nvmrc
+.posthtmlrc
+.prettierrc
+.stylintrc
+package.json
+package-lock.json
+README.md
